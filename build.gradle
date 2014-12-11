@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+mainClassName = 'hello.HelloWorld'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.google.guava:guava:18.0"
+
+    // junit testing
+    testCompile "junit:junit:4.11"
+    testCompile "org.mockito:mockito-all:1.9.5"
+}
